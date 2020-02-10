@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- To Do: add navigation bar -->
+    <!-- To Do: add responsive grid  -->
+    <!-- To Do: add row descriptions -->
+    <h1>Calculate your NPS&#174; (Net Promoter Score)</h1>
+    <p>Calculating your NPS score is as simple as tallying your responses and subtracting the percentage of detractors from the percentage of promoters. The score is a whole number that ranges from -100 to 100, and indicates customer happiness with your brand experience.</p>
+    <p>Use the calculator below to calculate your NPS from your survey responses.</p>
+    <div class="NPScalculator">
+      <h2>NPS Calculator</h2>
+      <div class="positiveScoreBox">
+        <label>10</label>
+        <input id="score10" type="text" onChange="updatePositiveScore()"/>
+        <label>9</label>
+        <input id="score9" type="text" onChange="updatePositiveScore()"/>
+      </div>
+
+      <div class="positiveScoreBox">
+        <label>Total</label>
+        <input id="positiveScore" type="text"/>
+      </div>
+
+      <div class="neutralScoreBox">
+        <label>8</label>
+        <input id="score8" type="text" onChange="updateNeutralScore()"/>
+        <label>7</label>
+        <input id="score7" type="text" onChange="updateNeutralScore()"/>
+      </div>
+
+      <div class="neutralScoreBox">
+        <label>Total</label>
+        <input id="neutralScore" type="text" />
+      </div>
+
+      <div class="negativeScoreBox">
+        <label>6</label>
+        <input id="score6" type="text" onChange="updateNegativeScore()"/>
+        <label>5</label>
+        <input id="score5" type="text" onChange="updateNegativeScore()"/>
+        <label>4</label>
+        <input id="score4" type="text" onChange="updateNegativeScore()"/>
+        <label>3</label>
+        <input id="score3" type="text" onChange="updateNegativeScore()"/>
+        <label>2</label>
+        <input id="score2" type="text" onChange="updateNegativeScore()"/>
+        <label>1</label>
+        <input id="score1" type="text" onChange="updateNegativeScore()"/>
+        <label>0</label>
+        <input id="score0" type="text" onChange="updateNegativeScore()"/>
+      </div>
+
+      <div class="negativeScoreBox">
+        <label>Total</label>
+        <input id="negativeScore" type="text" />
+      </div>
+
+      <!-- To Do: Add Start Over button -->
+      <div class="positiveScoreBox">
+        <p id="positivePercentage"></p>
+        <p>of total responses</p>
+      </div>
+
+      <div class="negativeScoreBox">
+        <p id="negativePercentage"></p>
+        <p>of total responses</p>
+      </div>
+
+      <div class="neutralScoreBox">
+        <p id="NPSscore"></p>
+        <p>This is your NPS</p>
+      </div>
+    </div>
+    <!-- To Do: Add email subscription form -->
+    <!-- To Do: Add social media links -->
+  </body>
+</html>

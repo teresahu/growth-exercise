@@ -1,0 +1,45 @@
+.NPScalculator {
+  background-color: #fafaf8;
+}
+
+.NPScalculator input {
+  width: 20px;
+  padding: 2px;
+  display:block;
+  border: .5px solid #999;
+  border-radius: 1px;
+}
+
+.NPScalculator h2 {
+  background-color: #8662ce;
+  color: #fff;
+  width: 140px;
+  font-size: 13px;
+  padding: 2px;
+  margin: 20px auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+.positiveScoreBox {
+  outline: 1px solid #c6d56c;
+  padding: 10px;
+  color: #c6d56c;
+  font-weight: 600;
+  margin: 20px;
+}
+
+.neutralScoreBox {
+  outline: 1px solid #c0c1bd;
+  padding: 10px;
+  color: #888;
+  font-weight: 600;
+  margin: 20px;
+}
+
+.negativeScoreBox {
+  outline: 1px solid #fbcec7;
+  padding: 10px;
+  color: #c93422;
+  font-weight: 600;
+  margin: 20px;
+}
