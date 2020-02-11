@@ -4,43 +4,53 @@
     <meta charset="UTF-8">
     <title>title</title>
     <link rel="stylesheet" href="styles.css" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Slab">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css">
     <script src="script.js"></script>
   </head>
   <body>
     <!-- To Do: add navigation bar -->
     <!-- To Do: add responsive grid  -->
     <!-- To Do: add row descriptions -->
-    <h1>Calculate your NPS&#174; (Net Promoter Score)</h1>
-    <p>Calculating your NPS score is as simple as tallying your responses and subtracting the percentage of detractors from the percentage of promoters. The score is a whole number that ranges from -100 to 100, and indicates customer happiness with your brand experience.</p>
-    <p>Use the calculator below to calculate your NPS from your survey responses.</p>
+    <div class="heading">
+      <h1>Calculate your NPS&#174; (Net Promoter Score)</h1>
+      <p>Calculating your NPS score is as simple as tallying your responses and subtracting the percentage of detractors from the percentage of promoters. The score is a whole number that ranges from -100 to 100, and indicates customer happiness with your brand experience.</p>
+      <p>Use the calculator below to calculate your NPS from your survey responses.</p>
+    </div>
     <div class="NPScalculator">
       <h2>NPS Calculator</h2>
-      <div class="positiveScoreBox">
+      <div class="scoreBox positiveScoreBox">
+        <div class="smiley smileyPositive"></div>
         <label>10</label>
         <input id="score10" type="text" onChange="updatePositiveScore()"/>
         <label>9</label>
         <input id="score9" type="text" onChange="updatePositiveScore()"/>
       </div>
 
-      <div class="positiveScoreBox">
+      <div class="scoreBox positiveScoreBox">
+        <div class="smiley smileyPositive"></div>
         <label>Total</label>
         <input id="positiveScore" type="text"/>
       </div>
 
-      <div class="neutralScoreBox">
+      <div class="scoreBox neutralScoreBox">
+        <div class="smiley smileyNeutral"></div>
         <label>8</label>
         <input id="score8" type="text" onChange="updateNeutralScore()"/>
         <label>7</label>
         <input id="score7" type="text" onChange="updateNeutralScore()"/>
       </div>
 
-      <div class="neutralScoreBox">
+      <div class="scoreBox neutralScoreBox">
+        <div class="smiley smileyNeutral"></div>
         <label>Total</label>
         <input id="neutralScore" type="text" />
       </div>
 
-      <div class="negativeScoreBox">
+      <div class="scoreBox negativeScoreBox">
+        <div class="smiley smileyPositive"></div>
         <label>6</label>
         <input id="score6" type="text" onChange="updateNegativeScore()"/>
         <label>5</label>
@@ -57,23 +67,26 @@
         <input id="score0" type="text" onChange="updateNegativeScore()"/>
       </div>
 
-      <div class="negativeScoreBox">
+      <div class="scoreBox negativeScoreBox">
+        <div class="smiley smileyNegative"></div>
         <label>Total</label>
         <input id="negativeScore" type="text" />
       </div>
 
       <!-- To Do: Add Start Over button -->
-      <div class="positiveScoreBox">
+      <div class="scoreBox positiveScoreBox">
+        <div class="smiley smileyPositive"></div>
         <p id="positivePercentage"></p>
         <p>of total responses</p>
       </div>
 
-      <div class="negativeScoreBox">
+      <div class="scoreBox negativeScoreBox">
+        <div class="smiley smileyNegative"></div>
         <p id="negativePercentage"></p>
         <p>of total responses</p>
       </div>
 
-      <div class="neutralScoreBox">
+      <div class="scoreBox neutralScoreBox">
         <p id="NPSscore"></p>
         <p>This is your NPS</p>
       </div>

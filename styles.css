@@ -1,3 +1,14 @@
+body {
+  font-family: 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  color: #474645;
+  line-height: 1.5;
+}
+
+.heading h1 {
+  font-size: 2em;
+}
+
 .NPScalculator {
   background-color: #fafaf8;
 }
@@ -20,26 +31,57 @@
   text-align: center;
   text-transform: uppercase;
 }
-.positiveScoreBox {
-  outline: 1px solid #c6d56c;
-  padding: 10px;
-  color: #c6d56c;
+
+.scoreBox {
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #fff;
+  padding: 48px 10px 10px 10px;
   font-weight: 600;
-  margin: 20px;
+  margin: 48px 0px;
+  position: relative;
+}
+.positiveScoreBox {
+  outline: 1px solid #a1b800;
+  color: #728200;
 }
 
 .neutralScoreBox {
-  outline: 1px solid #c0c1bd;
-  padding: 10px;
-  color: #888;
-  font-weight: 600;
-  margin: 20px;
+  outline: 1px solid #bebeb8;
+  color: #474645;
 }
 
 .negativeScoreBox {
-  outline: 1px solid #fbcec7;
-  padding: 10px;
-  color: #c93422;
-  font-weight: 600;
-  margin: 20px;
+  outline: 1px solid #ee8466;
+  color: #c12b00;
+}
+
+.smiley {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: -24px;
+}
+
+.smileyPositive {
+  width: 48px;
+  height: 48px;
+  background-size: 48px 48px;
+  background-image: url('https://dcx14qs33eg2z.cloudfront.net/assets/smilies/smiley-promoter-baf115b256de447c4d6804350988d666e6da1c488548c8c32e6d8bd1b27acda5.png');
+}
+
+.smileyNeutral {
+  width: 48px;
+  height: 48px;
+  background-size: 48px 48px;
+  background-image: url('https://dcx14qs33eg2z.cloudfront.net/assets/smilies/smiley-passive-a82aa51c50ea7484c3e36583670b9491eaf3cd57ed49a7d863af64cf695e5fa6.png');
+}
+
+.smileyNegative {
+  width: 48px;
+  height: 48px;
+  background-size: 48px 48px;
+  background-image: url('https://dcx14qs33eg2z.cloudfront.net/assets/smilies-2x/smiley-detractor-2x-92df58fdcf53f6e8e675eed3ff90fdc9b0a021ea7f942bcacf21919a55090f01.png');
 }
