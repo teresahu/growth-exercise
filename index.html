@@ -4,91 +4,149 @@
     <meta charset="UTF-8">
     <title>title</title>
     <link rel="stylesheet" href="styles.css" type="text/css">
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Slab">
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css">
+<script src="script.js"></script>
   </head>
   <body>
     <!-- To Do: add navigation bar -->
     <!-- To Do: add responsive grid  -->
     <!-- To Do: add row descriptions -->
-    <div class="heading">
-      <h1>Calculate your NPS&#174; (Net Promoter Score)</h1>
-      <p>Calculating your NPS score is as simple as tallying your responses and subtracting the percentage of detractors from the percentage of promoters. The score is a whole number that ranges from -100 to 100, and indicates customer happiness with your brand experience.</p>
-      <p>Use the calculator below to calculate your NPS from your survey responses.</p>
-    </div>
-    <div class="NPScalculator">
-      <h2>NPS Calculator</h2>
-      <div class="scoreBox positiveScoreBox">
-        <div class="smiley smileyPositive"></div>
-        <label>10</label>
-        <input id="score10" type="text" onChange="updatePositiveScore()"/>
-        <label>9</label>
-        <input id="score9" type="text" onChange="updatePositiveScore()"/>
+    <div class="container">
+      <div class="row">
+        <div class="column column-80 column-offset-10">
+          <div class="heading">
+            <h1>Calculate your NPS&#174; (Net Promoter Score)</h1>
+            <p>Calculating your NPS score is as simple as tallying your responses and subtracting the percentage of detractors from the percentage of promoters. The score is a whole number that ranges from -100 to 100, and indicates customer happiness with your brand experience.</p>
+            <p>Use the calculator below to calculate your NPS from your survey responses.</p>
+          </div>
+        </div>
+        <div class="column column-10"></div>
       </div>
+      <div class="NPScalculator">
+        <h2>NPS Calculator</h2>
+        <div class="row">
+          <div class="column column-10">lorem ipsum
+          </div>
+          <div class="column column-20">
+            <div class="scoreBox positiveScoreBox">
+              <div class="smiley smileyPositive"></div>
+              <div class="scoreInputGroup">
+                <label>10</label>
+                <input id="score10" type="text" onChange="updatePositiveScore()"/>
+              </div>
+              <div class="scoreInputGroup">
+                <label>9</label>
+                <input id="score9" type="text" onChange="updatePositiveScore()"/>
+              </div>
+            </div>
+          </div>
+          <div class="column column-20">
+            <div class="scoreBox neutralScoreBox">
+              <div class="smiley smileyNeutral"></div>
+              <div class="scoreInputGroup">
+                <label>8</label>
+                <input id="score8" type="text" onChange="updateNeutralScore()"/>
+              </div>
+              <div class="scoreInputGroup">
+                <label>7</label>
+                <input id="score7" type="text" onChange="updateNeutralScore()"/>
+              </div>
+            </div>
+          </div>
+          <div class="column column-50">
+            <div class="scoreBox negativeScoreBox">
+              <div class="smiley smileyPositive"></div>
+              <div class="scoreInputGroup">
+                <label>6</label>
+                <input id="score6" type="text" onChange="updateNegativeScore()"/>
+              </div>
+              <div class="scoreInputGroup">
+                <label>5</label>
+                <input id="score5" type="text" onChange="updateNegativeScore()"/>
+              </div>
+              <div class="scoreInputGroup">
+                <label>4</label>
+                <input id="score4" type="text" onChange="updateNegativeScore()"/>
+              </div>
+              <div class="scoreInputGroup">
+                <label>3</label>
+                <input id="score3" type="text" onChange="updateNegativeScore()"/>
+              </div>
+              <div class="scoreInputGroup">
+                <label>2</label>
+                <input id="score2" type="text" onChange="updateNegativeScore()"/>
+              </div>
+              <div class="scoreInputGroup">
+                <label>1</label>
+                <input id="score1" type="text" onChange="updateNegativeScore()"/>
+              </div>
+              <div class="scoreInputGroup">
+                <label>0</label>
+                <input id="score0" type="text" onChange="updateNegativeScore()"/>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <div class="scoreBox positiveScoreBox">
-        <div class="smiley smileyPositive"></div>
-        <label>Total</label>
-        <input id="positiveScore" type="text"/>
-      </div>
+        <div class="row">
+          <div class="column column-10">lorem ipsum
+          </div>
+          <div class="column column-20">
+            <div class="scoreBox positiveScoreBox">
+              <div class="smiley smileyPositive"></div>
+              <div class="scoreInputGroup">
+                <label>Total</label>
+                <input id="positiveScore" type="text"/>
+              </div>
+            </div>
+          </div>
+          <div class="column column-20">
+            <div class="scoreBox neutralScoreBox">
+              <div class="smiley smileyNeutral"></div>
+              <div class="scoreInputGroup">
+                <label>Total</label>
+                <input id="neutralScore" type="text" />
+              </div>
+            </div>
+          </div>
+          <div class="column column-20 column-offset-20">
+            <div class="scoreBox negativeScoreBox">
+              <div class="smiley smileyNegative"></div>
+              <div class="scoreInputGroup">
+                <label>Total</label>
+                <input id="negativeScore" type="text" />
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <div class="scoreBox neutralScoreBox">
-        <div class="smiley smileyNeutral"></div>
-        <label>8</label>
-        <input id="score8" type="text" onChange="updateNeutralScore()"/>
-        <label>7</label>
-        <input id="score7" type="text" onChange="updateNeutralScore()"/>
-      </div>
-
-      <div class="scoreBox neutralScoreBox">
-        <div class="smiley smileyNeutral"></div>
-        <label>Total</label>
-        <input id="neutralScore" type="text" />
-      </div>
-
-      <div class="scoreBox negativeScoreBox">
-        <div class="smiley smileyPositive"></div>
-        <label>6</label>
-        <input id="score6" type="text" onChange="updateNegativeScore()"/>
-        <label>5</label>
-        <input id="score5" type="text" onChange="updateNegativeScore()"/>
-        <label>4</label>
-        <input id="score4" type="text" onChange="updateNegativeScore()"/>
-        <label>3</label>
-        <input id="score3" type="text" onChange="updateNegativeScore()"/>
-        <label>2</label>
-        <input id="score2" type="text" onChange="updateNegativeScore()"/>
-        <label>1</label>
-        <input id="score1" type="text" onChange="updateNegativeScore()"/>
-        <label>0</label>
-        <input id="score0" type="text" onChange="updateNegativeScore()"/>
-      </div>
-
-      <div class="scoreBox negativeScoreBox">
-        <div class="smiley smileyNegative"></div>
-        <label>Total</label>
-        <input id="negativeScore" type="text" />
-      </div>
-
-      <!-- To Do: Add Start Over button -->
-      <div class="scoreBox positiveScoreBox">
-        <div class="smiley smileyPositive"></div>
-        <p id="positivePercentage"></p>
-        <p>of total responses</p>
-      </div>
-
-      <div class="scoreBox negativeScoreBox">
-        <div class="smiley smileyNegative"></div>
-        <p id="negativePercentage"></p>
-        <p>of total responses</p>
-      </div>
-
-      <div class="scoreBox neutralScoreBox">
-        <p id="NPSscore"></p>
-        <p>This is your NPS</p>
+        <div class="row">
+          <div class="column column-10">lorem ipsum
+            <!-- To Do: Add Start Over button -->
+          </div>
+          <div class="column column-offset-20 column-20">
+            <div class="scoreBox positiveScoreBox">
+              <div class="smiley smileyPositive"></div>
+              <p id="positivePercentage"></p>
+              <p>of total responses</p>
+            </div>
+          </div>
+          <div class="column column-20">
+            <div class="scoreBox negativeScoreBox">
+              <div class="smiley smileyNegative"></div>
+              <p id="negativePercentage"></p>
+              <p>of total responses</p>
+            </div>
+          </div>
+          <div class="column column-20">
+            <div class="scoreBox neutralScoreBox">
+              <p id="NPSscore"></p>
+              <p>This is your NPS</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- To Do: Add email subscription form -->

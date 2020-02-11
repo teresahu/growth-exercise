@@ -1,8 +1,12 @@
 body {
   font-family: 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 100%;
   color: #474645;
   line-height: 1.5;
+}
+
+.heading {
+  padding-top: 64px;
+  text-align: center;
 }
 
 .heading h1 {
@@ -11,34 +15,44 @@ body {
 
 .NPScalculator {
   background-color: #fafaf8;
+  padding: 0px 20px;
+  margin-top: 48px;
+}
+
+.scoreInputGroup {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  text-align: center;
 }
 
 .NPScalculator input {
-  width: 20px;
   padding: 2px;
-  display:block;
   border: .5px solid #999;
   border-radius: 1px;
+  width: 48px !important;
+  text-align: center;
+  height: 48px !important;
 }
 
 .NPScalculator h2 {
-  background-color: #8662ce;
+  background-color: #8566cc;
   color: #fff;
   width: 140px;
-  font-size: 13px;
-  padding: 2px;
+  font-size: 0.778em;
+  vertical-align: middle;
+  padding: 1px 12px 0px 12px;
   margin: 20px auto;
   text-align: center;
   text-transform: uppercase;
+  font-weight: 600;
+  line-height: 24px;
 }
 
 .scoreBox {
-  border-radius: 4px;
-  box-sizing: border-box;
-  width: 100%;
+  border-radius: 5px;
   background-color: #fff;
-  padding: 48px 10px 10px 10px;
-  font-weight: 600;
+  padding: 48px 10px 24px 32px;
   margin: 48px 0px;
   position: relative;
 }
