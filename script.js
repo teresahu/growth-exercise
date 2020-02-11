@@ -42,3 +42,23 @@ function updateNPS(){
   isNaN(negativePercentage) ? document.getElementById('negativePercentage').innerHTML = '' : document.getElementById('negativePercentage').innerHTML = negativePercentage+"%";
   isNaN(NPSscore) ? document.getElementById('NPSscore').innerHTML = '' : document.getElementById('NPSscore').innerHTML = NPSscore;
 }
+
+function reset() {
+  document.getElementById('score10').value = '';
+  document.getElementById('score9').value = '';
+  document.getElementById('score8').value = '';
+  document.getElementById('score7').value = '';
+  document.getElementById('score6').value = '';
+  document.getElementById('score5').value = '';
+  document.getElementById('score4').value = '';
+  document.getElementById('score3').value = '';
+  document.getElementById('score2').value = '';
+  document.getElementById('score1').value = '';
+  document.getElementById('score0').value = '';
+  document.getElementById('positiveScore').value = '';
+  document.getElementById('neutralScore').value = '';
+  document.getElementById('negativeScore').value = '';
+  document.getElementById('positivePercentage').innerHTML = '';
+  document.getElementById('negativePercentage').innerHTML = '';
+  document.getElementById('NPSscore').innerHTML = '';
+}

@@ -131,8 +131,7 @@
           <div class="column column-10 directions">
             <strong>Calculate your NPS</strong>
             <p>Subtract the percentage of Detractors from the percentage of Promoters.</p>
-            <!-- To Do: Add Start Over button -->
-            <p><a href="#">Start over</a></p>
+            <p><a href="javascript:void(0);" onClick="reset()">Start over</a></p>
           </div>
           <div class="column column-offset-20 column-20">
             <div class="scoreBox positiveScoreBox">
@@ -150,6 +149,7 @@
           </div>
           <div class="column column-20">
             <div class="scoreBox neutralScoreBox">
+              <div class="smiley smileyNPS">NPS</div>
               <p class="score" id="NPSscore"></p>
               <p>This is your NPS</p>
             </div>

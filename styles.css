@@ -111,6 +111,15 @@ body {
   background-image: url('https://dcx14qs33eg2z.cloudfront.net/assets/smilies-2x/smiley-detractor-2x-92df58fdcf53f6e8e675eed3ff90fdc9b0a021ea7f942bcacf21919a55090f01.png');
 }
 
+.smileyNPS {
+  border-radius: 24px;
+  background-color: #474645;
+  width: 48px;
+  height: 48px;
+  color: #fff;
+  padding: 14px 10px 0 10px;
+}
+
 .score {
   font-size: 1.5em;
 }
