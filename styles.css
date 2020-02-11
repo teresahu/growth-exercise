@@ -16,6 +16,11 @@ body {
 .NPScalculator {
   background-color: #fafaf8;
   padding: 0px 20px;
+  margin-top: 64px;
+}
+
+.directions {
+  font-size: .8em;
   margin-top: 48px;
 }
 
@@ -24,6 +29,10 @@ body {
   vertical-align: middle;
   margin-right: 10px;
   text-align: center;
+}
+
+.scoreInputGroup label {
+  font-weight: 500;
 }
 
 .NPScalculator input {
@@ -52,9 +61,11 @@ body {
 .scoreBox {
   border-radius: 5px;
   background-color: #fff;
-  padding: 48px 10px 24px 32px;
+  padding: 48px 10px 24px 10px;
   margin: 48px 0px;
   position: relative;
+  text-align: center;
+  font-size: .8em;
 }
 .positiveScoreBox {
   outline: 1px solid #a1b800;
@@ -98,4 +109,12 @@ body {
   height: 48px;
   background-size: 48px 48px;
   background-image: url('https://dcx14qs33eg2z.cloudfront.net/assets/smilies-2x/smiley-detractor-2x-92df58fdcf53f6e8e675eed3ff90fdc9b0a021ea7f942bcacf21919a55090f01.png');
+}
+
+.score {
+  font-size: 1.5em;
+}
+
+.scoreBox p {
+  margin-bottom: 0 !important;
 }

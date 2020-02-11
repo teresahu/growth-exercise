@@ -21,13 +21,16 @@
             <p>Calculating your NPS score is as simple as tallying your responses and subtracting the percentage of detractors from the percentage of promoters. The score is a whole number that ranges from -100 to 100, and indicates customer happiness with your brand experience.</p>
             <p>Use the calculator below to calculate your NPS from your survey responses.</p>
           </div>
+          <!-- To Do: Add  -->
         </div>
         <div class="column column-10"></div>
       </div>
       <div class="NPScalculator">
         <h2>NPS Calculator</h2>
         <div class="row">
-          <div class="column column-10">lorem ipsum
+          <div class="column column-10 directions">
+            <strong>Count the responses</strong>
+            <p>Add up the number of responses provided for each score.</p>
           </div>
           <div class="column column-20">
             <div class="scoreBox positiveScoreBox">
@@ -91,7 +94,9 @@
         </div>
 
         <div class="row">
-          <div class="column column-10">lorem ipsum
+          <div class="column column-10 directions">
+            <strong>Group the responses</strong>
+            <p>Add up the total number of responses provided for each group.</p>
           </div>
           <div class="column column-20">
             <div class="scoreBox positiveScoreBox">
@@ -123,26 +128,29 @@
         </div>
 
         <div class="row">
-          <div class="column column-10">lorem ipsum
+          <div class="column column-10 directions">
+            <strong>Calculate your NPS</strong>
+            <p>Subtract the percentage of Detractors from the percentage of Promoters.</p>
             <!-- To Do: Add Start Over button -->
+            <p><a href="#">Start over</a></p>
           </div>
           <div class="column column-offset-20 column-20">
             <div class="scoreBox positiveScoreBox">
               <div class="smiley smileyPositive"></div>
-              <p id="positivePercentage"></p>
+              <p class="score" id="positivePercentage"></p>
               <p>of total responses</p>
             </div>
           </div>
           <div class="column column-20">
             <div class="scoreBox negativeScoreBox">
               <div class="smiley smileyNegative"></div>
-              <p id="negativePercentage"></p>
+              <p class="score" id="negativePercentage"></p>
               <p>of total responses</p>
             </div>
           </div>
           <div class="column column-20">
             <div class="scoreBox neutralScoreBox">
-              <p id="NPSscore"></p>
+              <p class="score" id="NPSscore"></p>
               <p>This is your NPS</p>
             </div>
           </div>
